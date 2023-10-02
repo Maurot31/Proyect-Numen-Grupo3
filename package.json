@@ -11,8 +11,10 @@
   "dependencies": {
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "expo-font": "^11.6.0",
     "next": "13.5.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.8"
   }
 }
