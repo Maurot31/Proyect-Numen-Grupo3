@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Link from "next/link";
+import CartWidget from "./CartWidget";
 
 
 
@@ -26,7 +27,12 @@ const NavBar = () => {
       <nav className="nav">
         <h2>Heroe Wear</h2>
 
+        <div className="cart__widget">
+         
+        </div>
+
         <ul className={active}>
+        <CartWidget />
           <li className="nav__item">
             <Link href="/" className="nav__link">
               Inicio
@@ -43,9 +49,9 @@ const NavBar = () => {
             </Link>
           </li>
         </ul>
-        
-        
-        
+
+
+
         <div onClick={navToggle} className={icon}>
           <div className="line1"></div>
           <div className="line2"></div>
@@ -60,8 +66,15 @@ const NavBar = () => {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 8vh;
+        height: 9vh;
         background: #252629;
+        z-index: 1;
+        position: relative;
+      }
+
+      .cart__widget{
+        display: flex;
+        align-items: flex-end;
       }
       
       .nav__menu {
