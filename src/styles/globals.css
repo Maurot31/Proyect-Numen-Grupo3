@@ -22,7 +22,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: Bangers-Regular;
   color: whitesmoke;
   letter-spacing: 0.08rem;
