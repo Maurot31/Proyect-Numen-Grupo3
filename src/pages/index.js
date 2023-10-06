@@ -6,6 +6,7 @@ import NavBar from '@/components/navBar/NavBar'
 import CardSectionComunidad from '@/components/cardSectionIndex/CardSectionComunidad'
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

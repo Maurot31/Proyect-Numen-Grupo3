@@ -45,7 +45,7 @@ const CartWidget = () => {
                   }
                   
                   .icon-cart path {
-                    fill: rgb(240, 8, 8);
+                    fill: #F22E42;
                     transition: .2s linear;
                   }
                   

@@ -5,8 +5,18 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
+  --white-color: whitesmoke;
+  --first-color: #252629;
+  --second-color: #091835;
+  --third-color: #172556;
+  --fourth-color: #F22E42;
+  --five-color: #3BBEF4 ;
 
 }
+
+
+
+
 
 
 * {
