@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from '@/components/navBar/NavBar'
 import CardSectionComunidad from '@/components/cardSectionIndex/CardSectionComunidad'
-import HeaderHome from '@/components/HeaderHome'
 
 
 
@@ -22,9 +21,9 @@ export default function Home() {
       <header>
         <NavBar />
         <HeaderHome />
-        <CardSectionComunidad />
       </header>
       <main>
+        <CardSectionComunidad />
       </main>
     </>
   )
