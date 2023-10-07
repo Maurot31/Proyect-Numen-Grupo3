@@ -30,7 +30,7 @@ const NavBar = () => {
           <Logo />
           <h2>Heroe Wear</h2>
         </div>
-
+        
         <div className="cart__widget">
 
         </div>
@@ -48,10 +48,16 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="nav__item">
+            <Link href="/novedades" className="nav__link">
+              Novedades
+            </Link>
+          </li>
+          <li className="nav__item">
             <Link href="/contacto" className="nav__link">
               Contacto
             </Link>
           </li>
+          
         </ul>
 
 

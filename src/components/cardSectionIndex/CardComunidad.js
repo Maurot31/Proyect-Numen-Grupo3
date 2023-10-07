@@ -30,7 +30,8 @@ const CardComunidad = ({infoComunidad}) => {
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             overflow: hidden;
-            margin: 15px 0 15px 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
           }
           
           .card {
