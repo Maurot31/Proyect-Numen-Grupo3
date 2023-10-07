@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import NavBar from '@/components/navBar/NavBar'
 import CardSectionComunidad from '@/components/cardSectionIndex/CardSectionComunidad'
+import FeaturedProducts from '@/components/Shop/FeatureProducts'
+
 
 
 
@@ -21,6 +23,8 @@ export default function Home() {
       <main>
         <NavBar />
         <CardSectionComunidad />
+        <FeaturedProducts />
+
       </main>
     </>
   )
