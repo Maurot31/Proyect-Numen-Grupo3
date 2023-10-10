@@ -56,7 +56,8 @@ li {
 }
 
 a {
-
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
   text-decoration: none;
   color: rgb(204, 204, 204);
 }

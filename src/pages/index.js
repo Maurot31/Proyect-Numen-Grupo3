@@ -10,6 +10,7 @@ import HeaderHome from '@/components/HeaderHome'
 
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
       <main>
         <CardSectionComunidad />
         <FeaturedProducts />
-
+      
       </main>
     </>
   )
