@@ -30,7 +30,8 @@ const CardComunidad = ({infoComunidad}) => {
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             overflow: hidden;
-            margin: 15px 0 15px 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
           }
           
           .card {
@@ -53,7 +54,7 @@ const CardComunidad = ({infoComunidad}) => {
             font-size: 32px;
             font-weight: 700;
             opacity: 1;
-            background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+            background: linear-gradient(-45deg, #091835 0%, #172556 100% );
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

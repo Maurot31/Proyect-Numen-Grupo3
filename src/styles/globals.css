@@ -5,8 +5,18 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
+  --white-color: whitesmoke;
+  --first-color: #252629;
+  --second-color: #091835;
+  --third-color: #172556;
+  --fourth-color: #F22E42;
+  --five-color: #3BBEF4 ;
 
 }
+
+
+
+
 
 
 * {
@@ -21,19 +31,32 @@ body {
   overflow-x: hidden;
 }
 
+body{
+  overflow-y: hidden;
+
+}
+
 h1,
 h2,
 h3 {
   font-family: Bangers-Regular;
   color: whitesmoke;
   letter-spacing: 0.08rem;
+  object-fit: contain;
 }
+p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(204, 204, 204);
+}
+
+
 
 li {
   list-style: none;
 }
 
 a {
+
   text-decoration: none;
   color: rgb(204, 204, 204);
 }
@@ -45,6 +68,7 @@ a {
   transition: 0.3s;
   left: 1.2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
 }
 
 
@@ -56,3 +80,10 @@ a {
 .Bangers-Regular {
   font-family: Bangers-Regular;
 }
+
+/**************   INDEX    **********************/
+/* Hay que cambiar la imagen*/
+.home{
+  background-image: url(../../../Proyect-Numen-Grupo3/public/img/background-home.jpg);
+}
+

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Link from "next/link";
 import CartWidget from "./CartWidget";
+import Logo from "./Logo";
 
 
 
@@ -25,14 +26,17 @@ const NavBar = () => {
   return (
     <>
       <nav className="nav">
-        <h2>Heroe Wear</h2>
-
+        <div className="logo">
+          <Logo />
+          <h2>Heroe Wear</h2>
+        </div>
+        
         <div className="cart__widget">
-         
+
         </div>
 
         <ul className={active}>
-        <CartWidget />
+          <CartWidget />
           <li className="nav__item">
             <Link href="/" className="nav__link">
               Inicio
@@ -44,10 +48,16 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="nav__item">
+            <Link href="/novedades" className="nav__link">
+              Novedades
+            </Link>
+          </li>
+          <li className="nav__item">
             <Link href="/contacto" className="nav__link">
               Contacto
             </Link>
           </li>
+          
         </ul>
 
 
@@ -70,6 +80,12 @@ const NavBar = () => {
         background: #252629;
         z-index: 1;
         position: relative;
+      }
+
+      .logo{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
       }
 
       .cart__widget{
@@ -114,12 +130,12 @@ const NavBar = () => {
         }
       }
 
-      /* Active Class */
+                                      /* Active Class */
       .nav__active {
         transform: translateX(0%);
       }
       
-      /* Toggle Icon Animation */
+                                      /* Toggle Icon Animation */
       
       .toggle .line1 {
         transform: rotate(-45deg) translate(-4px, 5px);
