@@ -3,6 +3,7 @@ import React from 'react'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/navBar/NavBar'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 const Tienda = () => {
@@ -22,7 +23,7 @@ const Tienda = () => {
 
             </main>
             <div>Tienda</div>
-        </>
+        </>   
     )
 }
 
