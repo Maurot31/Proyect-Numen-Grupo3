@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/navBar/NavBar'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 const Contacto = () => {
@@ -23,6 +24,8 @@ const Contacto = () => {
             </main>
             <div>Contacto</div>
         </>
+        
+        
     )
 }
 

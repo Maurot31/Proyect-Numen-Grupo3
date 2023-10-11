@@ -9,8 +9,6 @@ import HeaderHome from '@/components/HeaderHome'
 
 
 
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -31,6 +29,7 @@ export default function Home() {
         <FeaturedProducts />
       
       </main>
+      
     </>
   )
 }
