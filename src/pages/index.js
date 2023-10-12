@@ -23,7 +23,8 @@ export default function Home() {
       <main>
         <NavBar />
         <CardSectionComunidad />
-        <FeaturedProducts />
+        
+        <FeaturedProducts /> {/* Provisorio */}
 
       </main>
     </>

@@ -6,31 +6,31 @@ const FeaturedProducts = () => {
       id: 1,
       name: 'Producto Destacado 1',
       price: '$100',
-      imageUrl: 'batman/prod-batman-00002.png',
+      imageUrl: './media/Products/batman/prod-batman-00002.png',
     },
     {
       id: 2,
       name: 'Producto Destacado 2',
       price: '$120',
-      imageUrl: 'dc/prod-dc-00001.png',
+      imageUrl: './media/Products/dc/prod-dc-00001.png',
     },
     {
       id: 3,
       name: 'Producto Destacado 3',
       price: '$150',
-      imageUrl: 'dc/prod-dc-00001.png',
+      imageUrl: './media/Products/dc/prod-dc-00001.png',
     },
     {
       id: 4,
       name: 'Producto Destacado 4',
       price: '$1550',
-      imageUrl: 'dc/prod-dc-00001.png',
+      imageUrl: './media/Products/dc/prod-dc-00001.png',
     },
     {
       id: 5,
       name: 'Producto Destacado 5',
       price: '$100',
-      imageUrl: 'batman/prod-batman-00002.png',
+      imageUrl: './media/Products/batman/prod-batman-00002.png',
     },
 
   ];
@@ -42,7 +42,7 @@ const FeaturedProducts = () => {
       <div className="product-list">
         {products.map(product => (
           <div className="product" key={product.id}>
-            <img src={`./media/Products/${product.imageUrl}`.default} alt={product.name} />
+            <img src={product.imageUrl} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.price}</p>
             <AddButton />
