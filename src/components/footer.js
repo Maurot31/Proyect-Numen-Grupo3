@@ -5,7 +5,9 @@ const Footer = ()=>{
         <div className="contenedor-footer">
             <div className="contenedor-1">
                 <div className="caja">          
-                    <img  src='../img/Logo.png' className='imagen-footer' alt='Logo de la Pagina' />
+                    <img  src='../img/Logo.png' className='imagen-footer' alt='Logo de la Pagina' style={{
+                                                                                                        width: `100px`
+                                                                                                         }}/>
                 </div>
                 <div className="caja">
                     <h2>SOBRE NOSOTROS</h2>
