@@ -28,7 +28,7 @@ export default function Home() {
       <main>
         <CardSectionComunidad />
         <FeaturedProducts />
-
+      
       </main>
       
     </>

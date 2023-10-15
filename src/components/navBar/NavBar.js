@@ -2,8 +2,8 @@ import { useState } from "react"
 import Link from "next/link";
 import CartWidget from "./CartWidget";
 import Logo from "./Logo";
-
-
+import { AiOutlineUser } from "react-icons/ai";
+import Headroom from "react-headroom";
 
 
 const NavBar = () => {
@@ -25,49 +25,58 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="nav">
-        <div className="logo">
-          <Logo />
-          <h2>Heroe Wear</h2>
-        </div>
-        
-        <div className="cart__widget">
+      <Headroom>
+        <nav className="nav">
+          <div className="logo">
+            <Logo />
+            <h2>Heroe Wear</h2>
+          </div>
 
-        </div>
+          <div>
+            
+          </div>
 
-        <ul className={active}>
-          <CartWidget />
-          <li className="nav__item">
-            <Link href="/" className="nav__link">
-              Inicio
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link href="/tienda" className="nav__link">
-              Tienda
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link href="/novedades" className="nav__link">
-              Novedades
-            </Link>
-          </li>
-          <li className="nav__item">
-            <Link href="/contacto" className="nav__link">
-              Contacto
-            </Link>
-          </li>
-          
-        </ul>
+          <ul className={active}>
+
+            <AiOutlineUser size={'1.8rem'} color={'#F22E42'} />
+
+            <CartWidget />
+
+            <li className="nav__item">
+              <Link href="/" className="nav__link">
+                Inicio
+              </Link>
+            </li>
+
+            <li className="nav__item">
+              <Link href="/tienda" className="nav__link">
+                Tienda
+              </Link>
+            </li>
+
+            <li className="nav__item">
+              <Link href="/novedades" className="nav__link">
+                Novedades
+              </Link>
+            </li>
+
+            <li className="nav__item">
+              <Link href="/contacto" className="nav__link">
+                Contacto
+              </Link>
+            </li>
+
+          </ul>
 
 
 
-        <div onClick={navToggle} className={icon}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-        </div>
-      </nav>
+          <div onClick={navToggle} className={icon}>
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </div>
+        </nav>
+      </Headroom>
 
       <style jsx>{`
       
