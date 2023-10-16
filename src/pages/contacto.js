@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/navBar/NavBar'
+import Footer from '@/components/footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,12 +21,14 @@ const Contacto = () => {
 
             </header>
             <main>
+                <div>Contacto</div>
+
+                <Footer />
 
             </main>
-            <div>Contacto</div>
         </>
-        
-        
+
+
     )
 }
 
