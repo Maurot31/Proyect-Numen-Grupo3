@@ -15,6 +15,7 @@ import SectionPromo from '@/components/promoSection/SectionPromo'
 
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
