@@ -8,6 +8,7 @@ import FeaturedProducts from '@/components/Shop/FeatureProducts'
 import HeaderHome from '@/components/HeaderHome'
 import Footer from '@/components/footer'
 import SectionPromo from '@/components/promoSection/SectionPromo'
+import Login from '@/components/Login'
 
 
 
@@ -34,6 +35,7 @@ export default function Home() {
       <main>
         <CardSectionComunidad />
         <SectionPromo />
+        <Login />
         <FeaturedProducts />
         
         <Footer />
