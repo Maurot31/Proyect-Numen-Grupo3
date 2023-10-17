@@ -66,6 +66,11 @@ const NavBar = () => {
               </Link>
             </li>
 
+            <li className="nav__item">
+              <Link href="/usuarios" className="nav__link">
+                Usuarios
+              </Link>
+            </li>
           </ul>
 
 
