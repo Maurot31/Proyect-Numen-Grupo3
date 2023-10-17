@@ -1,4 +1,5 @@
 import AddButton from "./AddButton";
+import Image from 'next/image'
 
 const FeaturedProducts = () => {
   const products = [
@@ -6,32 +7,32 @@ const FeaturedProducts = () => {
       id: 1,
       name: 'Producto Destacado 1',
       price: '$100',
-      imageUrl: './media/Products/batman/prod-batman-00002.png',
+      imageUrl: '/img/Products/batman/prod-batman-00003.png',
     },
     {
       id: 2,
       name: 'Producto Destacado 2',
       price: '$120',
-      imageUrl: './media/Products/dc/prod-dc-00001.png',
+      imageUrl: '/img/Products/dragon-ball/prod-dragonball-00002.png',
     },
     {
       id: 3,
       name: 'Producto Destacado 3',
       price: '$150',
-      imageUrl: './media/Products/dc/prod-dc-00001.png',
+      imageUrl: '/img/Products/macross/prod-macross-00002.png',
     },
     {
       id: 4,
       name: 'Producto Destacado 4',
       price: '$1550',
-      imageUrl: './media/Products/dc/prod-dc-00001.png',
-    },
+      imageUrl: '/img/Products/dc/prod-dc-00001.png'
+      },
     {
       id: 5,
       name: 'Producto Destacado 5',
       price: '$100',
-      imageUrl: './media/Products/batman/prod-batman-00002.png',
-    },
+      imageUrl: '/img/Products/batman/prod-batman-00002.png'
+       },
 
   ];
 
@@ -42,7 +43,7 @@ const FeaturedProducts = () => {
       <div className="product-list">
         {products.map(product => (
           <div className="product" key={product.id}>
-            <img src={product.imageUrl} alt={product.name} />
+            <Image src={product.imageUrl} width={200} height={200} alt={product.name}></Image>
             <h3>{product.name}</h3>
             <p>{product.price}</p>
             <AddButton />
@@ -60,6 +61,7 @@ const FeaturedProducts = () => {
                   text-align: center;
                   position: relative;
                   top: 80px;
+                  margin-bottom: 80px;
                 }
                 
                 .product-list {
@@ -83,7 +85,7 @@ const FeaturedProducts = () => {
                 
                 .product h3,h2 {
                   margin: 10px 0;
-                  color:#091835;
+                  color:#FFFFFF;
                 }
                 .product h2 {
                   font-size: 20x;
@@ -97,6 +99,7 @@ const FeaturedProducts = () => {
                   font-weight: bold;
                   color: #007bff;
                   margin: 0;
+                  margin-bottom: 10px;
                 }
                 
                 `}</style>
