@@ -10,7 +10,9 @@ const HeaderHome = () => {
                                             height: '91vh',
                                             backgroundSize: 'cover',
                                             backgroundRepeat: 'no-repeat',
-                                            backgroundPosition: '65% 0%' }}>
+                                            backgroundPosition: '65% 0%',
+                                            backgroundColor: 'rgb(90, 90, 105)',
+                                            backgroundBlendMode:'soft-light' }}>
                 <h1>Heroe Wear</h1>
                 <h2>Artículos de diseño</h2>
                 <p>Remeras de comics, anime y películas</p>
