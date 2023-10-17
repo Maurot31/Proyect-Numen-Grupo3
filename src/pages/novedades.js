@@ -4,9 +4,7 @@ import { Inter } from 'next/font/google'
 import NavBar from '@/components/navBar/NavBar'
 
 
-const inter = Inter({ subsets: ['latin'] })
-
-const Contacto = () => {
+const Novedades = () => {
     return (
         <>
             <Head>
@@ -22,11 +20,9 @@ const Contacto = () => {
             <main>
 
             </main>
-            <div>Contacto</div>
+            <div>novedades</div>
         </>
-        
-        
     )
 }
 
-export default Contacto
+export default Novedades

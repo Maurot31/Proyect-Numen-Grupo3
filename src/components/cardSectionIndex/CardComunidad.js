@@ -2,13 +2,14 @@
 
 const CardComunidad = ({infoComunidad}) => {
 
-    const{title, text} = infoComunidad
+    const{title, text, icon} = infoComunidad
   
     return (
       <>
         <div className="card-container">
           <div className="card">
             <div className="front-content">
+              <div>{icon}</div>
               <h3>{title}</h3>
             </div>
             <div className="content">
@@ -30,7 +31,8 @@ const CardComunidad = ({infoComunidad}) => {
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             overflow: hidden;
-            margin: 15px 0 15px 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
           }
           
           .card {
@@ -41,16 +43,17 @@ const CardComunidad = ({infoComunidad}) => {
           }
           
           .card .front-content {
+            display: flex;
+            flex-direction: column;
             width: 100%;
             height: 100%;
-            display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
             transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
           }
           
           .card .front-content h3 {
-            font-size: 32px;
+            font-size: 30px;
             font-weight: 700;
             opacity: 1;
             background: linear-gradient(-45deg, #091835 0%, #172556 100% );
