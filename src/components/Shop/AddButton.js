@@ -1,8 +1,18 @@
+import { useState } from "react"
+import Modal from "./Modal"
+
 const AddButton = () => {
+
+    const [showmodal, setshowModal] = useState(false)
+
     return (
         <>
-            <button>Agregar al Carrito</button>
-
+            <button onClick={() => setshowModal(!showmodal)}>Agregar al Carrito</button>
+            
+            <Modal 
+                showmodal={showmodal}
+                setshowModal={setshowModal}
+            />
 
             <style jsx>{`
                 button{
