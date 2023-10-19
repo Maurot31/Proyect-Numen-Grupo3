@@ -54,7 +54,10 @@ const UsuariosPage = () => {
 									<input 	type	="checkbox"
 											id		="remember-password" />
 								</div>
-								<button		type	="submit">Iniciar Sesión</button>
+								<button	className	="boton-login"
+											type	="submit">
+													Iniciar Sesión
+								</button>
 							</form>
 						</div>
 					</div>
@@ -95,7 +98,10 @@ const UsuariosPage = () => {
 											id		="confirm-password"
 											name	="confirm-password" />
 								</div>
-								<button		type	="submit">Registrarse</button>
+								<button	className	="boton-registro"
+											type	="submit">
+													Registrarse
+								</button>
 							</form>
 						</div>
 					</div>
@@ -103,25 +109,25 @@ const UsuariosPage = () => {
 {/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
 				<style jsx>{`
 					.usuarios-page
-					{ display: 					grid;
+					{ 	display: 					grid;
 						grid-template-columns: 	repeat(auto-fit, minmax(200px, 1fr));
 						justify-items:			center;
 						align-items: 			space-evenly;
-						color: 					#ffffff;	
+						color: 					#ffffff;
 						margin: 				50px}
 
 					.section-content
-					{ text-align: 				center;
+					{ 	text-align: 			center;
 						margin-top: 			10px;}
 
 					.login-section
-					{ background-image: 		url(/img/fondo-sesion.png);
+					{	background-image: 		url(/img/fondo-sesion.png);
 						height: 				300px;
 						width: 					200px;
 						border-radius: 			15px}
 
 					.registro-section
-					{ background-image: 		url(/img/fondo-registro.png);
+					{	background-image: 		url(/img/fondo-registro.png);
 						height: 				300px;
 						width: 					200px;
 						border-radius: 			15px}
@@ -131,19 +137,61 @@ const UsuariosPage = () => {
 						display:				grid;
 						place-content:			space-around}
 
-					button
-					{	background-color: 		#172556;
-						color:					#ffffff;
-						border:					none;
-						border-radius:			.3rem;
-						padding:				5px 10px;
-						text-transform:			uppercase;
-						box-shadow:				0px 2px 2px -1px black;
-						transition:				0.3s;
-						width:					95%;}
+					.boton-login
+					{	margin-bottom: 			50px;
+						padding: 				10px 20px;
+						border-radius: 			50px;
+						border: 				0;
+						background-color: 		#F22E42;
+						box-shadow: 			rgb(0 0 0 / 5%) 0 0 8px;
+						letter-spacing: 		1.5px;
+						text-transform: 		uppercase;
+						font-size: 				15px;
+						color: 					#ffffff;
+						transition: 			all .3s ease;
+						margin-bottom: 			15px;}
+					
+					.boton-login:hover
+					{	letter-spacing: 		3px;
+						background-color: 		#172556;
+						color: 					hsl(0, 0%, 100%);
+						box-shadow: 			#F22E42 0px 7px 29px 0px;}
+					
+					.boton-login:active
+					{	letter-spacing: 		3px;
+						background-color: 		hsl(261deg 80% 48%);
+						color: 					hsl(0, 0%, 100%);
+						box-shadow: 			#F22E42 0px 0px 0px 0px;
+						transform: 				translateY(10px);
+						transition: 			100ms;}
 
-					button:hover
-					{	box-shadow: 			0px 2px 2px 0.1px black;}
+					.boton-registro
+					{	margin-bottom: 			50px;
+						padding: 				10px 20px;
+						border-radius: 			50px;
+						border: 				0;
+						background-color: 		#172556;
+						box-shadow: 			rgb(0 0 0 / 5%) 0 0 8px;
+						letter-spacing: 		1.5px;
+						text-transform: 		uppercase;
+						font-size: 				15px;
+						color: 					#ffffff;
+						transition: 			all .3s ease;
+						margin-bottom: 			15px;}
+					
+					.boton-registro:hover
+					{	letter-spacing: 		3px;
+						background-color: 		#F22E42;
+						color: 					hsl(0, 0%, 100%);
+						box-shadow: 			#172556 0px 7px 29px 7px;}
+					
+					.boton-registro:active
+					{	letter-spacing: 		3px;
+						background-color: 		hsl(261deg 80% 48%);
+						color: 					hsl(0, 0%, 100%);
+						box-shadow: 			#F22E42 5px 5px 5px 5px;
+						transform: 				translateY(10px);
+						transition: 			100ms;}
 				`}</style>
 
 				<Footer />
