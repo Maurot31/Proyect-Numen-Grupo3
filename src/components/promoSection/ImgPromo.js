@@ -7,8 +7,8 @@ const ImgPromo = () => {
     return (
         <>
             <div>
-                <Image src={Hulka} width={160} height={250} ></Image>
-                <Image src={Samurai} width={160} height={250} ></Image>
+                <Image src={Hulka} width={160} height={250} alt='hulka'></Image>
+                <Image src={Samurai} width={160} height={250} alt='Samurai' ></Image>
             </div>
 
             <style jsx>{`

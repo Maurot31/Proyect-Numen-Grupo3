@@ -12,7 +12,7 @@ const SectionPromo = () => {
             </div>
             <style jsx>{`
                 .contain{
-                    height: 60vh;
+                    height: 70vh;
                 }
 
                 @media screen and (min-width: 768px) {
