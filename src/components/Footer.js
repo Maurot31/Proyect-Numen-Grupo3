@@ -1,4 +1,8 @@
 import React from "react";
+import Logo from "../../public/img/Logos/Logo.png";
+import LogoFacebook from "../../public/img/Logos/Logo-facebook.png";
+import LogoInstagram from "../../public/img/Logos/Logo-isntagra.png";
+import LogoTwitter from "../../public/img/Logos/Logo-twitter.png";
 
 //Codigo estructura footer
 const Footer = ()=>{
@@ -7,7 +11,9 @@ const Footer = ()=>{
             <div className="contenedor-1">
                 <div className="caja">
                     <figure className="figura-logo">
-                        <img  src={require(`../media/Logos/Logo.png`)} className='imagen-footer' alt='Logo de la Pagina' /> 
+                        <div className='imagen-footer' style={{ logoImage: `url(${Logo})`,
+                                                                width:'150px' }}>
+                        </div> 
                     </figure>         
                 </div>
                 <div className="caja">
@@ -18,13 +24,16 @@ const Footer = ()=>{
                     <h2>SIGUENOS</h2>
                     <div className="red-social">
                         <a href='#' >
-                            <img className="logo-red-social" src={require(`../media/Logos/Logo-facebook.png`)} alt="logo-facebook" /> 
+                            <div className="logo-red-social" style={{ facebookImage: `url(${LogoFacebook})`,
+                                                                width:'40px;' }}></div> 
                         </a>
                         <a href='#' > 
-                            <img className="logo-red-social" src={require(`../media/Logos/Logo-instagram.png`)} alt="logo-instagram" />
+                        <div className="logo-red-social" style={{ instagramImage: `url(${LogoInstagram})`,
+                                                                width:'40px;' }}></div>
                         </a>
                         <a href='#'>
-                            <img className="logo-red-social" src={require(`../media/Logos/Logo-twitter.png`)} alt="logo-twitter" />
+                        <div className="logo-red-social" style={{ twitterImage: `url(${LogoTwitter})`,
+                                                                width:'40px;' }}></div>
                         </a>
                     </div>
                 </div>
@@ -59,10 +68,6 @@ const Footer = ()=>{
             align-items:center;
         }
 
-        .imagen-footer{
-            width:150px;
-        }
-
         .caja<h2{
             margin-bootom:25px;
             font-size:20px;
@@ -79,10 +84,6 @@ const Footer = ()=>{
             line-height:45px;
             margin-right:10px;
             text-align: center;   
-        }
-
-        .logo-red-social{
-            width:40px; 
         }
 
         .contenedor-2{
