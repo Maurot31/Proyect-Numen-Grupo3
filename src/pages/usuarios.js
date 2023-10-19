@@ -2,7 +2,7 @@ import React 	from "react";
 import Head		from "next/head";
 import NavBar 	from "@/components/navBar/NavBar";
 import Footer 	from "@/components/Footer";
-//--------❀(Para mayor Legibilidad, configurar sangria por 4 espacios)❀--------
+// --------❀(Para mayor Legibilidad, configurar sangria por 4 espacios)❀--------
 
 const UsuariosPage = () => {
 	return (
@@ -18,7 +18,7 @@ const UsuariosPage = () => {
 				<div>usuarios</div>
 
 				<div className="usuarios-page">
-//☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Login*
+{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Login* */}
 					<div className="login-section">
 						<div className="section-content">
 							<h1>Iniciar Sesión</h1>
@@ -58,7 +58,7 @@ const UsuariosPage = () => {
 							</form>
 						</div>
 					</div>
-//☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Registro*
+{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Registro* */}
 					<div className="registro-section">
 						<div className="section-content">
 							<h1>Registro</h1>
@@ -100,7 +100,7 @@ const UsuariosPage = () => {
 						</div>
 					</div>
 				</div>
-//☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos*
+{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
 				<style jsx>{`
 					.usuarios-page
 					{ display: 					grid;
