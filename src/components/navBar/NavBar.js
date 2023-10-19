@@ -38,7 +38,9 @@ const NavBar = () => {
 
           <ul className={active}>
 
-            <AiOutlineUser size={'1.8rem'} color={'#F22E42'} />
+            <Link href="/usuarios">
+              <AiOutlineUser size={'1.8rem'} color={'#F22E42'} />
+            </Link>
 
             <CartWidget />
 
