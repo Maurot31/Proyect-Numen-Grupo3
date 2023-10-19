@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../public/img/Logos/Logo.png";
 import LogoFacebook from "../../public/img/Logos/Logo-facebook.png";
-import LogoInstagram from "../../public/img/Logos/Logo-isntagra.png";
+import LogoInstagram from "../../public/img/Logos/Logo-instagram.png";
 import LogoTwitter from "../../public/img/Logos/Logo-twitter.png";
 
 //Codigo estructura footer

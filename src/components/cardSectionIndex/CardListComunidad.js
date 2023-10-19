@@ -30,6 +30,7 @@ const infoComunidad = [
 ]
 
 const CardListComunidad = () => {
+    
     return (
         <>
             <div>
