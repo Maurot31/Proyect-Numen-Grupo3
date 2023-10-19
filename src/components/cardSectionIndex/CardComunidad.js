@@ -25,6 +25,7 @@ const CardComunidad = ({infoComunidad}) => {
   
         <style jsx>{`
           .card-container {
+            background: whitesmoke;
             width: 300px;
             height: 300px;
             position: relative;
