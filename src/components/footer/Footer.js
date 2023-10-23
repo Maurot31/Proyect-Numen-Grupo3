@@ -7,7 +7,7 @@ import RedesFooter  from "./RedesFooter";
 const Footer=()=> {
     return (
         <>  
-{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
             <div className='contenedor-1'>
                 <LogoFooter />
                 <TexFooter />
@@ -17,7 +17,7 @@ const Footer=()=> {
                 <small>&copy; 2023 <b>Heroe Wear</b> - Todos los Derechos son Reservados </small>
             </div>
 
-{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
             <style jsx>{`
                 .contenedor-1
                 {   height:             350px;

@@ -3,7 +3,7 @@ import React from "react";
 const TextFooter=()=> {
     return (
         <>
-{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
             <div className='text'>
                 <h2>            SOBRE NOSOTROS                  </h2>
                 <p>Somos una tienda online, creada en 2023, 
@@ -11,7 +11,7 @@ const TextFooter=()=> {
                 de comics,series y anime.</p>
             </div>
 
-{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
             <style jsx>{`
                 .text
                 {   height:             200px;

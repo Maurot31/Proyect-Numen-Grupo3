@@ -7,7 +7,7 @@ import LogoTwitter      from "../../../public/img/Logos/Logo-twitter.png";
 const RedesFooter=()=> {
   return (
     <>
-{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
         <div className="contenedor">
             <h2>SIGUENOS</h2>
             <div className="redes">
@@ -32,7 +32,7 @@ const RedesFooter=()=> {
             </div>
         </div>
 
-{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
         <style jsx>{`
             .contenedor
             {   display:            flex;

@@ -1,171 +1,146 @@
-import { useState } from "react"
-import Link from "next/link";
-import CartWidget from "./CartWidget";
-import Logo from "./Logo";
-import { AiOutlineUser } from "react-icons/ai";
-import Headroom from "react-headroom";
+import  { useState }      from "react";
+import    Link            from "next/link";
+import    CartWidget      from "./CartWidget";
+import    Logo            from "./Logo";
+import  { AiOutlineUser } from "react-icons/ai";
+import    Headroom        from "react-headroom";
 
+const NavBar=()=> {
+    // -------------------------❀(useState)❀-----------------------
+    const [active,  setActive]  = useState("nav__menu");
+    const [icon,    setIcon]    = useState("nav__toggler");
 
-const NavBar = () => {
+    const navToggle = () => {
+        if (active === "nav__menu")
+        {       setActive   ("nav__menu nav__active");}
+        else    setActive   ("nav__menu");
 
-  const [active, setActive] = useState("nav__menu");
+        // --------------------❀(Icon Toggler)❀--------------------
+        if (icon === "nav__toggler")
+        {       setIcon     ("nav__toggler toggle");}
+        else    setIcon     ("nav__toggler");
+    };
 
-  const [icon, setIcon] = useState("nav__toggler");
+    return (
+        <>
+{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+            <Headroom>
+                <nav className="nav">
+                    <div className="logo">
+                        <Logo />
+                        <h2>Heroe Wear</h2>
+                    </div>
 
-  const navToggle = () => {
-    if (active === "nav__menu") {
-      setActive("nav__menu nav__active");
-    } else setActive("nav__menu");
+                    <ul className={active}>
+                        <Link href="/usuarios">
+                        <AiOutlineUser size={'1.8rem'} color={'#F22E42'} />
+                        </Link>
+                        <CartWidget />
+                        <li className="nav__item">
+                            <Link href="/" className="nav__link">
+                                Inicio
+                            </Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link href="/tienda" className="nav__link">
+                                Tienda
+                            </Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link href="/novedades" className="nav__link">
+                                Novedades
+                            </Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link href="/contacto" className="nav__link">
+                                Contacto
+                            </Link>
+                        </li>
+                        <li className="nav__item">
+                            <Link href="/usuarios" className="nav__link">
+                                Usuarios
+                            </Link>
+                        </li>
+                    </ul>
 
-    // Icon Toggler
-    if (icon === "nav__toggler") {
-      setIcon("nav__toggler toggle");
-    } else setIcon("nav__toggler");
-  };
+                    <div onClick={navToggle} className={icon}>
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
+                    </div>
+                </nav>
+            </Headroom>
 
-  return (
-    <>
-      <Headroom>
-        <nav className="nav">
-          <div className="logo">
-            <Logo />
-            <h2>Heroe Wear</h2>
-          </div>
+{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+            <style jsx>{`
+                .nav
+                {   display:            flex;
+                    align-items:        center;
+                    justify-content:    space-around;
+                    height:             9vh;
+                    background:         #252629;
+                    z-index:            1;
+                    position:           relative;}
 
-          <div>
-            
-          </div>
+                .logo
+                {   display:            flex;
+                    align-items:        center;
+                    gap:                1rem;}
 
-          <ul className={active}>
+                .cart__widget
+                {   display:            flex;
+                    align-items:        flex-end;}
+                
+                .nav__menu
+                {   display:            flex;
+                    align-items:        center;
+                    justify-content:    space-around;
+                    gap:                3rem;}
 
-            <Link href="/usuarios">
-              <AiOutlineUser size={'1.8rem'} color={'#F22E42'} />
-            </Link>
+                .nav__toggler
+                {   display:            none;}
 
-            <CartWidget />
+                .nav__toggler div
+                {   width:              2.5rem;
+                    height:             0.2rem;
+                    margin:             0.4rem;
+                    background:         rgb(204, 204, 204);
+                    transition:         0.3s ease-in;}
+                
+                @media screen and 
+                (max-width: 768px) 
+                {   .nav__toggler
+                    {   display:        block;
+                        cursor:         pointer;}
+                    
+                    .nav__menu
+                    {   position:       fixed;
+                        top:            7vh;
+                        right:          0;
+                        height:         93vh;
+                        width:          50vw;
+                        background:     linear-gradient(0deg, rgba(57, 57, 57, 1), rgba(37, 38, 41, 1));
+                        flex-direction: column;
+                        transform:      translateX(100%);
+                        transition:     transform 0.5s ease-in;}
+                }
 
-            <li className="nav__item">
-              <Link href="/" className="nav__link">
-                Inicio
-              </Link>
-            </li>
+                // --------------------❀(Active Class)❀--------------------
+                .nav__active
+                {   transform:          translateX(0%);}
+                
+                // ----------------❀(Toggle Icon Animation)❀---------------
+                .toggle .line1
+                {   transform:          rotate(-45deg) translate(-4px, 5px);}
 
-            <li className="nav__item">
-              <Link href="/tienda" className="nav__link">
-                Tienda
-              </Link>
-            </li>
+                .toggle .line2
+                {   opacity:            0;}
 
-            <li className="nav__item">
-              <Link href="/novedades" className="nav__link">
-                Novedades
-              </Link>
-            </li>
-
-            <li className="nav__item">
-              <Link href="/contacto" className="nav__link">
-                Contacto
-              </Link>
-            </li>
-
-            <li className="nav__item">
-              <Link href="/usuarios" className="nav__link">
-                Usuarios
-              </Link>
-            </li>
-          </ul>
-
-
-
-          <div onClick={navToggle} className={icon}>
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-          </div>
-        </nav>
-      </Headroom>
-
-      <style jsx>{`
-      
-      
-      .nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 9vh;
-        background: #252629;
-        z-index: 1;
-        position: relative;
-      }
-
-      .logo{
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
-
-      .cart__widget{
-        display: flex;
-        align-items: flex-end;
-      }
-      
-      .nav__menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap: 3rem;
-      }
-      .nav__toggler {
-        display: none;
-      }
-      .nav__toggler div {
-        width: 2.5rem;
-        height: 0.2rem;
-        margin: 0.4rem;
-        background: rgb(204, 204, 204);
-        transition: 0.3s ease-in;
-      }
-      
-      @media screen and (max-width: 768px) {
-        .nav__toggler {
-          display: block;
-          cursor: pointer;
-        }
-        
-        .nav__menu {
-          position: fixed;
-          top: 7vh;
-          right: 0;
-          height: 93vh;
-          width: 50vw;
-          background: background: rgb(57,57,57);
-          background: linear-gradient(0deg, rgba(57,57,57,1) 0%, rgba(37,38,41,1) 100%);;
-          flex-direction: column;
-          transform: translateX(100%);
-          transition: 0.5s ease-in;
-        }
-      }
-
-                                      /* Active Class */
-      .nav__active {
-        transform: translateX(0%);
-      }
-      
-                                      /* Toggle Icon Animation */
-      
-      .toggle .line1 {
-        transform: rotate(-45deg) translate(-4px, 5px);
-      }
-      .toggle .line2 {
-        opacity: 0;
-      }
-      .toggle .line3 {
-        transform: rotate(45deg) translate(-4px, -5px);
-      }
-    `}</style>
-
-    </>
-  )
+                .toggle .line3
+                {   transform:          rotate(45deg) translate(-4px, -5px);}
+            `}</style>
+        </>
+    )
 }
 
-export default NavBar
+export default NavBar;

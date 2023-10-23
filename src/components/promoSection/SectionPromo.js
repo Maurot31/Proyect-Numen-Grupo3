@@ -1,33 +1,31 @@
-import React from 'react'
-import ImgPromo from './ImgPromo'
-import TextPromo from './TextPromo'
+import React        from "react";
+import ImgPromo     from "./ImgPromo";
+import TextPromo    from "./TextPromo";
 
-const SectionPromo = () => {
+const SectionPromo=()=> {
     return (
         <>
-            <div className='contain'> 
-
+{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+            <div className="contain"> 
                 <ImgPromo />
                 <TextPromo />
-                
             </div>
-            <style jsx>{`
-                .contain{
-                    height: 70vh;
-                }
 
-                @media screen and (min-width: 768px) {
-                    .contain{
-                        height: 60vh;
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-               }
-                
-               
+{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+            <style jsx>{`
+                .contain
+                {   height:                 70vh;}
+
+                @media screen and 
+                (min-width: 768px)
+                {   .contain
+                    {   height:             60vh;
+                        display:            flex;
+                        justify-content:    space-around;
+                        align-items:        center;}}
             `}</style>
         </>
     )
 }
 
-export default SectionPromo
+export default SectionPromo;

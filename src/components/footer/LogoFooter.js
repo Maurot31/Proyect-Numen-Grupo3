@@ -5,7 +5,7 @@ import Logo     from "../../../public/img/Logos/Logo.png";
 const LogoFooter=()=> {
   return (
     <>
-{/* ☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
         <div>
           <Image  
                 src     ={Logo} 
