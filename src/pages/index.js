@@ -6,7 +6,7 @@ import NavBar from '@/components/navBar/NavBar'
 import CardSectionComunidad from '@/components/cardSectionIndex/CardSectionComunidad'
 import FeaturedProducts from '@/components/Shop/FeatureProducts'
 import HeaderHome from '@/components/HeaderHome'
-import Footer from '@/components/footer'
+import Footer from '@/components/footer/Footer'
 import SectionPromo from '@/components/promoSection/SectionPromo'
 import Login from '@/components/Login'
 
