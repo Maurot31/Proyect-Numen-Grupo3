@@ -1,7 +1,7 @@
 import React 	from "react";
 import Head		from "next/head";
 import NavBar 	from "@/components/navBar/NavBar";
-import Footer 	from "@/components/Footer";
+import Footer 	from "@/components/footer/Footer";
 // --------❀(Para mayor Legibilidad, configurar sangria por 4 espacios)❀--------
 
 const UsuariosPage = () => {
