@@ -3,7 +3,13 @@ import { AiOutlineClose } from "react-icons/ai";
 
 /***********************************Falta la programacion del boton de si y agregar al carrito */
 
-const Modal = ({ showmodal, setshowModal }) => {
+const Modal = ({ showmodal, setshowModal, addToCart, productId }) => {
+
+    const handleAddToCart = () => {
+        addToCart(productId);
+        setshowModal(false);
+      };
+    
     return (
         <>
             {showmodal &&
@@ -17,7 +23,7 @@ const Modal = ({ showmodal, setshowModal }) => {
                         </div>
                         <div className="text">
                             <h4>Queres agregar el producto al carrito?</h4>
-                            <button className='aceptar'>si</button>
+                            <button onClick={handleAddToCart} className='aceptar'>si</button>
                         </div>
                     </div>
                 </div>

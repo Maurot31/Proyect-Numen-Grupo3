@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Modal from "./Modal"
 
-const AddButton = () => {
+const AddButton = ({ id, addToCart }) => {
 
     const [showmodal, setshowModal] = useState(false)
 
@@ -12,6 +12,8 @@ const AddButton = () => {
             <Modal 
                 showmodal={showmodal}
                 setshowModal={setshowModal}
+                addToCart={addToCart}
+                productId={id}
             />
 
             <style jsx>{`

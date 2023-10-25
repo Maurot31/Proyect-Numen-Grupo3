@@ -2,6 +2,8 @@ import Head from 'next/head'
 import React from 'react'
 import { Inter } from 'next/font/google'
 import NavBar from '@/components/navBar/NavBar'
+import ShoppingCart from '@/components/Shop/ShoppingCart'
+import CartItem from '@/components/Shop/CartItem'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +21,7 @@ const Tienda = () => {
 
             </header>
             <main>
+                <ShoppingCart />
                 <div>Tienda</div>
             
             </main>
