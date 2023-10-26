@@ -33,7 +33,7 @@ const FeaturedProducts = () => {
 
   return (
     <>
-{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+
         <div className="featured-products">
             <h2>Productos Destacados</h2>
             <div className="product-list">
@@ -53,7 +53,7 @@ const FeaturedProducts = () => {
             </div>
         </div>
 
-{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+
       <style jsx>{`
         .featured-products
         {   min-width:          200px;

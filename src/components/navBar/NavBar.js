@@ -1,6 +1,5 @@
 import  { useState }      from "react";
 import    Link            from "next/link";
-import    CartWidget      from "./CartWidget";
 import    Logo            from "./Logo";
 import  { AiOutlineUser } from "react-icons/ai";
 import    Headroom        from "react-headroom";
@@ -35,7 +34,7 @@ const NavBar=()=> {
                         <Link href="/usuarios">
                         <AiOutlineUser size={'1.8rem'} color={'#F22E42'} />
                         </Link>
-                        <CartWidget />
+                      
                         <li className="nav__item">
                             <Link href="/" className="nav__link">
                                 Inicio

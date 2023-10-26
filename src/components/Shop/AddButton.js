@@ -1,21 +1,23 @@
-import   React      from "react";
+import React from "react";
 import { useState } from "react";
-import   Modal      from "./Modal";
+import Modal from "./Modal";
 
-const AddButton=()=> {
+const AddButton = ({ id, addToCart }) => {
 
     const [showmodal, setshowModal] = useState(false);
 
     return (
         <>
-{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+            
             <button onClick={() => setshowModal(!showmodal)}>Agregar al Carrito</button>
             <Modal 
-                showmodal   ={showmodal}
+                showmodal={showmodal}
                 setshowModal={setshowModal}
+                addToCart={addToCart}
+                productId={id}
             />
 
-{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+            
             <style jsx>{`
                 button
                 {   background-color:   #172556;

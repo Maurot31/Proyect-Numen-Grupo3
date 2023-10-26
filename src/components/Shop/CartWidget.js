@@ -3,7 +3,7 @@ import React from "react";
 const CartWidget=()=> {
     return (
         <>
-{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+
             <button data-quantity="0" className="btn-cart">
                 <svg 
 					className	="icon-cart"
@@ -26,7 +26,7 @@ const CartWidget=()=> {
                 <span className="quantity"></span>
             </button>
 
-{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+
             <style jsx>{`
                 .btn-cart
 				{	display:			flex;

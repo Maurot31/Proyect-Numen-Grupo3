@@ -3,6 +3,8 @@ import   Head       from "next/head";
 import { Inter }    from "next/font/google";
 import   NavBar     from "@/components/navBar/NavBar";
 import Shop from "@/components/Shop/Shop";
+import ShoppingCart from '@/components/Shop/ShoppingCart'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -46,7 +48,7 @@ const Tienda=()=> {
                     </button>
                 </div>
 
-                <Shop />
+                <ShoppingCart />
             </main>
         </>
     )

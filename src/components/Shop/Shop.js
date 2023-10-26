@@ -3,7 +3,7 @@ import AddButton  from "./AddButton";
 import Image      from "next/image";
 
 const Shop = () => {
-{/* *Productos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Productos* */}
+
   const products = [
     { id:       1,
       name:     "Producto Destacado 1",
@@ -88,7 +88,7 @@ const Shop = () => {
 
   return (
     <>
-{/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
+
         <div className="shop">
             <h2>Tienda</h2>
             <div className="product-list">
@@ -108,7 +108,7 @@ const Shop = () => {
             </div>
         </div>
 
-{/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
+/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */
       <style jsx>{`
         .shop
         {   min-width:          200px;
