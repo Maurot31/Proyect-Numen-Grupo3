@@ -1,5 +1,5 @@
 import AddButton from './AddButton'
-import Image from 'next/image';
+import Image from "next/image";
 
 
 const Product = ({ product, addToCart }) => {

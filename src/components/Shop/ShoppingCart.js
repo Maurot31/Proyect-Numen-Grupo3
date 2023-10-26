@@ -29,7 +29,7 @@ const ShoppingCart = () => {
             <div className="title">
                 <h2>Tienda</h2>
                 <div></div>
-                <CartWidget />
+                <CartWidget cart={cart} deleteFromCart={deleteFromCart} clearCart={clearCart} />
             </div>
             <div className='box grid-responsive'>
                 {
@@ -38,7 +38,7 @@ const ShoppingCart = () => {
 
             </div>
 
-            <Carrito cart={cart} deleteFromCart={deleteFromCart} clearCart={clearCart} />
+           
 
 
             <style jsx>{`

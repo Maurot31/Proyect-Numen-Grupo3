@@ -31,7 +31,7 @@ export function shoppingReducer(state, action) {
 
             const itemToDelete = state.cart.find(item => item.id === action.payload)
 
-            return itemToDelete.quantity > 0
+            return itemToDelete.quantity > 1
                 ? {
                     ...state,
                     cart: state.cart.map(item =>
@@ -42,7 +42,7 @@ export function shoppingReducer(state, action) {
                 }
                 : {
                     ...state,
-                    cart: state.cart.filter(item => item.id !== itemToDelete)
+                    cart: state.cart.filter(item => item.id !== action.payload)
                 }
         }
 

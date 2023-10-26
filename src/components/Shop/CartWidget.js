@@ -1,10 +1,15 @@
 import React from "react";
+import Carrito from "./Carrito";
+import { useState } from "react";
 
-const CartWidget=()=> {
+const CartWidget=({ cart, deleteFromCart, clearCart })=> {
+	
+	const [showCarrito, setShowCarrito] = useState(false)
+
     return (
         <>
 
-            <button data-quantity="0" className="btn-cart">
+            <button onClick={() => setShowCarrito(!showCarrito)} data-quantity="0" className="btn-cart">
                 <svg 
 					className	="icon-cart"
 					viewBox		="0 0 24.38 30.52"
@@ -26,6 +31,13 @@ const CartWidget=()=> {
                 <span className="quantity"></span>
             </button>
 
+			<Carrito
+				 cart={cart}
+				 deleteFromCart={deleteFromCart}
+				 clearCart={clearCart}
+				 showCarrito={showCarrito}
+				 setShowCarrito={setShowCarrito}
+				  />
 
             <style jsx>{`
                 .btn-cart
