@@ -79,6 +79,7 @@ const Carrito = ({ cart, deleteFromCart, clearCart, showCarrito, setShowCarrito 
                     transition:         .3s;}
 
                 .box{
+                    text-align: center;
                     padding: 0.5rem;
                     margin: 1rem;
                     background-color: var(--third-color);
@@ -89,6 +90,7 @@ const Carrito = ({ cart, deleteFromCart, clearCart, showCarrito, setShowCarrito 
                     color: whitesmoke;
                     font-size: 0.9rem;
                 }
+                
                 .boton{
                     display: flex;
                     flex-direction: column;
@@ -112,7 +114,13 @@ const Carrito = ({ cart, deleteFromCart, clearCart, showCarrito, setShowCarrito 
                     box-shadow: 0px 2px 2px 0.1px black;
                     
                 }    
-                    
+
+                @media screen and (max-width: 768px){
+                    .carrito{
+                    top: 195px;
+                    width: 300px;
+                }              
+                }    
             `}</style>
         </>
     )
