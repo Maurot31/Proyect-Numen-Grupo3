@@ -38,7 +38,8 @@ const NavBar=()=> {
                         <Logo />
                         <h2>Heroe Wear</h2>
                     </div>
-
+                    <div></div>
+                    <div></div>
                     <ul className={active}>
                         <Link href="/usuarios">
                             <AiOutlineUser size={"1.8rem"} color={"#F22E42"} />
