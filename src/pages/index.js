@@ -10,7 +10,7 @@ import HeaderHome from "@/components/HeaderHome";
 import Footer from "@/components/footer/Footer";
 import SectionPromo from "@/components/promoSection/SectionPromo";
 import Login from "@/components/Login";
-
+// import InstagramCarousel from "@/components/InstagramCarousel";
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,7 +33,7 @@ export default function Home() {
         <SectionPromo />
         <Login />
         <FeaturedProducts />
-
+        {/* <InstagramCarousel /> */}
         <Footer />
 
 

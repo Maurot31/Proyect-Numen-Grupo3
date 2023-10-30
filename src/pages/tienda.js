@@ -47,7 +47,6 @@ const Tienda=()=> {
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
                 <ShoppingCart />
             </main>
         </>
