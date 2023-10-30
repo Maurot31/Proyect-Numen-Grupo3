@@ -2,7 +2,7 @@ import React      from "react";
 import AddButton  from "./AddButton";
 import Image      from "next/image";
 
-const Shop = () => {
+
 
   const products = [
     { id:       1,
@@ -85,7 +85,7 @@ const Shop = () => {
                 price:    "$100",
                 imageUrl: "/img/Products/batman/prod-batman-00002.png",},
   ];
-
+  const Shop = () => {
   return (
     <>
 
@@ -154,4 +154,7 @@ const Shop = () => {
     </>
   );
 };
+
+
+export { products };
 export default Shop;

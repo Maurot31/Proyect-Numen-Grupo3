@@ -1,59 +1,30 @@
-import React      from "react";
-import AddButton  from "./AddButton";
-import Image      from "next/image";
+import React from "react";
+import { products } from "./Shop";
+import AddButton from "./AddButton";
 
 const FeaturedProducts = () => {
-{/* *Productos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Productos* */}
-  const products = [
-    { id:       1,
-      name:     "Producto Destacado 1",
-      price:    "$100",
-      imageUrl: "/img/Products/batman/prod-batman-00003.png",},
+  if (!products) return null;
 
-    { id:       2,
-      name:     "Producto Destacado 2",
-      price:    "$120",
-      imageUrl: "/img/Products/dragon-ball/prod-dragonball-00002.png",},
-
-    { id:       3,
-      name:     "Producto Destacado 3",
-      price:    "$150",
-      imageUrl: "/img/Products/macross/prod-macross-00002.png",},
-
-    { id:       4,
-      name:     "Producto Destacado 4",
-      price:    "$1550",
-      imageUrl: "/img/Products/dc/prod-dc-00001.png",},
-
-    { id:       5,
-      name:     "Producto Destacado 5",
-      price:    "$100",
-      imageUrl: "/img/Products/batman/prod-batman-00002.png",},
-  ];
+  // aplico filtro para productos destacados. Colocar ID que quiero filtrar.
+  const featuredProducts = products.filter((product) => [1, 2, 3, 4, 5, 6, 7, 8].includes(product.id));
 
   return (
     <>
-
-        <div className="featured-products">
-            <h2>Productos Destacados</h2>
-            <div className="product-list">
-                {products.map(product => (
-                    <div className="product" key={product.id}>
-                        <Image
-                            src     ={product.imageUrl}
-                            width   ={200}  
-                            height  ={200}
-                            alt     ={product.name}>
-                        </Image>
-                        <h3>{product.name}</h3>
-                        <p>{product.price}</p>
-                        <AddButton />
-                    </div>
-                ))}
+      <div className="featured-products">
+        <h2>Productos Destacados</h2>
+        <div className="product-list">
+          {featuredProducts.map((product) => (
+            <div className="product" key={product.id}>
+              <img src={product.imageUrl} alt={product.name} width={200} height={200} />
+              <h3>{product.name}</h3>
+              <p>{product.price}</p>
+              <AddButton />
             </div>
+          ))}
         </div>
+      </div>
 
-
+      {/* Estilos */}
       <style jsx>{`
         .featured-products
         {   min-width:          200px;
@@ -95,7 +66,7 @@ const FeaturedProducts = () => {
             color:              #007bff;
             margin:             0;
             margin-bottom:      10px;}
-        `}</style>
+      `}</style>
     </>
   );
 };
