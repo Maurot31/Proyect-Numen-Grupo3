@@ -24,7 +24,7 @@ const FeaturedProducts = () => {
         </div>
       </div>
 
-      {/* Estilos */}
+
       <style jsx>{`
         .featured-products
         {   min-width:          200px;
