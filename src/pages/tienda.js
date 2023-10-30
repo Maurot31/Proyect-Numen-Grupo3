@@ -24,7 +24,6 @@ const Tienda=()=> {
                 <NavBar />
             </header>
             <main>
-                <div>Tienda</div>
 
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">

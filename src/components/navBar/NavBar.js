@@ -2,12 +2,22 @@ import  { useState }      from "react";
 import    Link            from "next/link";
 import    Logo            from "./Logo";
 import  { AiOutlineUser } from "react-icons/ai";
+import  { AiOutlineBulb } from "react-icons/ai";
 import    Headroom        from "react-headroom";
 
 const NavBar=()=> {
     // -------------------------❀(useState)❀-----------------------
-    const [active,  setActive]  = useState("nav__menu");
-    const [icon,    setIcon]    = useState("nav__toggler");
+    const [active,      setActive]      = useState("nav__menu");
+    const [icon,        setIcon]        = useState("nav__toggler");
+    const [darkMode,    setDarkMode]    = useState(true);
+
+    // ------------------------❀(Claro/Oscuro)❀--------------------
+    const toggleDarkMode = () =>
+    {   setDarkMode(!darkMode);
+        if (darkMode)
+        {   document.body.classList.add     ("light-mode");} 
+        else 
+        {   document.body.classList.remove  ("light-mode");}};
 
     const navToggle = () => {
         if (active === "nav__menu")
@@ -24,15 +34,15 @@ const NavBar=()=> {
         <>
 {/* *Contenido☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Contenido* */}
             <Headroom>
-                <nav className="nav">
-                    <div className="logo">
+                <nav className={`nav ${darkMode ? "dark-mode" : "light-mode"}`}>                    <div className="logo">
                         <Logo />
                         <h2>Heroe Wear</h2>
                     </div>
-
+                    <div></div>
+                    <div></div>
                     <ul className={active}>
                         <Link href="/usuarios">
-                        <AiOutlineUser size={'1.8rem'} color={'#F22E42'} />
+                            <AiOutlineUser size={"1.8rem"} color={"#F22E42"} />
                         </Link>
                       
                         <li className="nav__item">
@@ -43,11 +53,6 @@ const NavBar=()=> {
                         <li className="nav__item">
                             <Link href="/tienda" className="nav__link">
                                 Tienda
-                            </Link>
-                        </li>
-                        <li className="nav__item">
-                            <Link href="/novedades" className="nav__link">
-                                Novedades
                             </Link>
                         </li>
                         <li className="nav__item">
@@ -67,20 +72,29 @@ const NavBar=()=> {
                         <div className="line2"></div>
                         <div className="line3"></div>
                     </div>
+
+                    <button
+                        className   ={active}
+                        onClick     ={toggleDarkMode}
+                        style       ={{ width:          "2.5rem",
+                                        height:         "2.5rem",
+                                        borderRadius:   "50%",}}>
+                        {darkMode ? 
+                        (   <AiOutlineBulb
+                                size    ={'1.2rem'}
+                                color   ={'#252629'}
+                                style   ={{ background: 'transparent' }} />)
+                        :
+                        (   <AiOutlineBulb
+                                size    ={'1.2rem'}
+                                color   ={'#F22E42'}
+                                style   ={{ background: 'transparent' }} />)}
+                    </button>
                 </nav>
             </Headroom>
 
 {/* *Estilos☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷Estilos* */}
             <style jsx>{`
-                .nav
-                {   display:            flex;
-                    align-items:        center;
-                    justify-content:    space-around;
-                    height:             9vh;
-                    background:         #252629;
-                    z-index:            1;
-                    position:           relative;}
-
                 .logo
                 {   display:            flex;
                     align-items:        center;

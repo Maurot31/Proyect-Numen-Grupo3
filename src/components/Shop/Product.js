@@ -10,7 +10,7 @@ const Product = ({ product, addToCart }) => {
     <>
 
       <div className="product">
-        <Image src={imageUrl} width={200} height={200} alt={name}></Image>
+        <Image src={imageUrl} width={200} height={200}></Image>
         <h3>{name}</h3>
         <p>${price}</p>
         <AddButton id={id} addToCart={addToCart} />
