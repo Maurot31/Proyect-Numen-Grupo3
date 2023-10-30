@@ -25,7 +25,8 @@ const Login=()=> {
                     flex-direction:     column;
                     justify-content:    center;
                     align-items:        center;
-                    text-shadow:        1px 1px 5px black ;}
+                    text-shadow:        1px 1px 5px black ;
+                    margin-top:      50px;}
                 
                 h3
                 {   color:              whitesmoke;
