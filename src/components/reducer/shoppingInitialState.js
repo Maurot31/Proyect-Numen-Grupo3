@@ -1,5 +1,4 @@
-
 export const shoppingInitialState = {
-    products: [],
-    cart: []
-}
+  products: [],
+  cart: [],
+};
