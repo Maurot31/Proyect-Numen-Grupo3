@@ -1,7 +1,6 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
-// --------❀(Falta la programacion del boton de si y agregar al carrito)❀--------
 
 const Modal = ({ showmodal, setshowModal, addToCart, productId }) => {
   const handleAddToCart = () => {

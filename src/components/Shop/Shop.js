@@ -158,3 +158,4 @@ import Image      from "next/image";
 
 export { products };
 export default Shop;
+

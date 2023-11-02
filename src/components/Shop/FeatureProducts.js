@@ -6,7 +6,7 @@ const FeaturedProducts = () => {
   if (!products) return null;
 
   // aplico filtro para productos destacados. Colocar ID que quiero filtrar.
-  const featuredProducts = products.filter((product) => [1, 2, 3, 4, 5, 6, 7, 8].includes(product.id));
+  const featuredProducts = products.filter((product) => [1, 2,3,4, 5, 6, 7, 8].includes(product.id));
 
   return (
     <>
