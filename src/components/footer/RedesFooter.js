@@ -11,24 +11,30 @@ const RedesFooter=()=> {
         <div className="contenedor">
             <h2>SIGUENOS</h2>
             <div className="redes">
-                <Image  
-                    src     ={LogoFacebook} 
-                    width   ={50} 
-                    height  ={50} 
+                <a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank" rel="noopener noreferrer">
+                     <Image  
+                         src     ={LogoFacebook} 
+                         width   ={50} 
+                         height  ={50} 
                     alt     ="Logo Facebook" >
-                </Image>
-                <Image  
-                    src     ={LogoInstagram} 
-                    width   ={50} 
-                    height  ={50} 
-                    alt     ="Logo Instagram" >
-                </Image>
-                <Image  
-                    src     ={LogoTwitter} 
-                    width   ={50} 
-                    height  ={50} 
-                    alt     ="Logo Twitter" >
-                </Image>
+                     </Image>
+                </a>
+                <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank" rel="noopener noreferrer">
+                     <Image  
+                         src     ={LogoInstagram} 
+                         width   ={50} 
+                         height  ={50} 
+                         alt     ="Logo Instagram" >
+                     </Image>
+                </a>
+                <a href="https://twitter.com/tu_cuenta_de_twitter" target="_blank" rel="noopener noreferrer">
+                     <Image  
+                         src     ={LogoTwitter} 
+                         width   ={50} 
+                         height  ={50} 
+                         alt     ="Logo Twitter" >
+                     </Image>
+                </a>
             </div>
         </div>
 
