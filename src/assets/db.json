@@ -163,5 +163,27 @@
       "imageUrl": "/img/Products/star-wars/prod-starwars-00004.png"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 5,
+      "name": "Batman 5",
+      "price": 110,
+      "imageUrl": "/img/Products/batman/prod-batman-00002.png",
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "name": "Batman 4",
+      "price": 110,
+      "imageUrl": "/img/Products/batman/prod-batman-00001.bmp",
+      "quantity": 3
+    },
+    {
+      "id": 3,
+      "name": "Akira 3",
+      "price": 100,
+      "imageUrl": "/img/Products/akira/prod-akira-00003.png",
+      "quantity": 1
+    }
+  ]
 }
