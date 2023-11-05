@@ -12,12 +12,11 @@ const ShoppingCart = () => {
 
   const { products, cart } = state;
 
-  const ENDPOINTS = {
-    products: "http://localhost:5000/products",
-    cart: "http://localhost:5000/cart",
-  };
-
   const updateState = async () => {
+    const ENDPOINTS = {
+      products: "http://localhost:5000/products",
+      cart: "http://localhost:5000/cart",
+    };
     const resProducts = await axios.get(ENDPOINTS.products),
       resCart = await axios.get(ENDPOINTS.cart);
 
@@ -38,6 +37,10 @@ const ShoppingCart = () => {
   }, []);
 
   const addToCart = async (id) => {
+    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
+    updateState();
+  };
+  /*  const addToCart = async (id) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
 
     try {
@@ -64,14 +67,15 @@ const ShoppingCart = () => {
     } catch (error) {
       console.log(error);
     }
-  };
+  }; */
 
-  const deleteFromCart = (id, all = false) => {
+  const deleteFromCart = async (id, all = false) => {
     if (all) {
       dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id });
     } else {
       dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
     }
+    updateState();
   };
 
   const clearCart = () => dispatch({ type: TYPES.CLEAR_CART });

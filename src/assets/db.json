@@ -163,34 +163,5 @@
       "imageUrl": "/img/Products/star-wars/prod-starwars-00004.png"
     }
   ],
-  "cart": [
-    {
-      "id": 3,
-      "name": "Akira 3",
-      "price": 100,
-      "imageUrl": "/img/Products/akira/prod-akira-00003.png",
-      "quantity": 2
-    },
-    {
-      "id": 4,
-      "name": "Batman 4",
-      "price": 110,
-      "imageUrl": "/img/Products/batman/prod-batman-00001.bmp",
-      "quantity": 2
-    },
-    {
-      "id": 5,
-      "name": "Batman 5",
-      "price": 110,
-      "imageUrl": "/img/Products/batman/prod-batman-00002.png",
-      "quantity": 2
-    },
-    {
-      "id": 13,
-      "name": "Half Life 13",
-      "price": 140,
-      "imageUrl": "/img/Products/half-life/prod-halflife-00001.png",
-      "quantity": 1
-    }
-  ]
+  "cart": []
 }
