@@ -3,7 +3,6 @@ import { shoppingReducer } from "../reducer/shoppingReducer";
 import { shoppingInitialState } from "../reducer/shoppingInitialState";
 import { TYPES } from "@/actions/actions";
 import Product from "./Product";
-import Carrito from "./Carrito";
 import CartWidget from "./CartWidget";
 import axios from "axios";
 
@@ -40,34 +39,6 @@ const ShoppingCart = () => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
     updateState();
   };
-  /*  const addToCart = async (id) => {
-    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-
-    try {
-      const newItem = products.find((product) => product.id === id);
-      const itemInCart = cart.find((item) => item.id === newItem.id);
-
-      if (itemInCart) {
-        await fetch(`${ENDPOINTS.cart}/${itemInCart.id}`, {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ quantity: itemInCart.quantity + 1 }),
-        });
-      } else {
-        await fetch(ENDPOINTS.cart, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ ...newItem, quantity: 1 }),
-        });
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }; */
 
   const deleteFromCart = async (id, all = false) => {
     if (all) {

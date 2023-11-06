@@ -8,6 +8,12 @@ const ENDPOINTS = {
 };
 export function shoppingReducer(state, action) {
   switch (action.type) {
+    case TYPES.CREATE_PRODUCT:
+      return {
+        ...state,
+        products: [...state.products, action.payload],
+      };
+
     case TYPES.READ_STATE: {
       return {
         ...state,
@@ -15,6 +21,24 @@ export function shoppingReducer(state, action) {
         cart: action.payload.cart,
       };
     }
+
+    case TYPES.UPDATE_PRODUCT:
+      const updatedProducts = state.products.map((product) =>
+        product.id === action.payload.id ? action.payload : product
+      );
+      return {
+        ...state,
+        products: updatedProducts,
+      };
+
+    case TYPES.DELETE_PRODUCT:
+      const filteredProducts = state.products.filter(
+        (product) => product.id !== action.payload
+      );
+      return {
+        ...state,
+        products: filteredProducts,
+      };
 
     case TYPES.ADD_TO_CART: {
       const newItem = state.products.find(
