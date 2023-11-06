@@ -1,12 +1,25 @@
-import React from "react";
-import { products } from "./Shop";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import AddButton from "./AddButton";
 
-const FeaturedProducts = () => {
-  if (!products) return null;
 
-  // aplico filtro para productos destacados. Colocar ID que quiero filtrar.
-  const featuredProducts = products.filter((product) => [1, 2,3,4, 5, 6, 7, 8].includes(product.id));
+const FeaturedProducts = () => {
+  const [featuredProducts, setFeaturedProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/products");
+        const allProducts = response.data;
+        const filteredProducts = allProducts.filter(product => [1, 2, 3, 4, 5, 6, 7, 8].includes(product.id));
+        setFeaturedProducts(filteredProducts);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -23,8 +36,7 @@ const FeaturedProducts = () => {
           ))}
         </div>
       </div>
-
-
+ 
       <style jsx>{`
         .featured-products
         {   min-width:          200px;
@@ -72,3 +84,4 @@ const FeaturedProducts = () => {
 };
 
 export default FeaturedProducts;
+
